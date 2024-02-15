@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Template",
+  "version": "1.0.0",
+  "action": { "default_popup": "index.html" },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": ["src/content.js"],
+      "matches": ["http://chocolatejes.us/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/scripts/index.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Template",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.js-loader-MpndPbTm.js"
+      ],
+      "matches": [
+        "http://chocolatejes.us/*"
+      ],
+      "css": [
+        "assets/content-K7WLFnMT.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "http://chocolatejes.us/*"
+      ],
+      "resources": [
+        "assets/content.js-X1NmNyB0.js"
+      ],
+      "use_dynamic_url": true
+    }
+  ]
+}

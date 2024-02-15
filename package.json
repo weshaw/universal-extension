@@ -1,0 +1,16 @@
+{
+  "name": "universal-extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node ./postbuild.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.23",
+    "jszip": "^3.10.1",
+    "vite": "^5.0.8"
+  }
+}
